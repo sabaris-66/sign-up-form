@@ -3,44 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
     <title>Sign Up Form</title>
 </head>
 <body>
-    <div>
-        <img src="./leaves.avif" alt="leaves">
-        <img src="./odin-lined.png" alt="odin">
-        <div>ODIN</div>
-        <div>Photo by <a>Halie West</a> on <a>Unsplash</a></div>
+    <div class="left">
+        <img src="./leaves.avif" alt="leaves" class="leafImage">
+        <div class="relative">
+            <div><img class="odinImage" src="./odin-lined.png" alt="odin"></div>
+            <div>ODIN</div>
+        </div>
+        <div class="figcaption">Photo by <a>Halie West</a> on <a>Unsplash</a></div>
     </div>
-    <div>
-        <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</div>
-        <div>You know you want to.</div>
-        <div>
+    <div class="right">
+        <div class="intro padLeft">
+            <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
+            <div>Sign up now to get started.</div>
+            <br>
+            <div>You know you want to.</div>
+        </div>
+        <div class="signUp padLeft">
             <form action="">
-                <legend>Let's do this!</legend>
-                
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" id="first_name" name="first_name">
+                <fieldset>
+                    <div style="font-size: larger;">Let's do this!</div>
+                    <div class="input">
+                        <div class="inputs">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
 
-                <label for="last_name">LAST NAME</label>
-                <input type="text" id="last_name" name="last_name">
+                        <div class="inputs">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
 
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="user_mail">
+                        <div class="inputs">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="user_mail" required>
+                        </div>
 
-                <label for="phone_no">PHONE NUMBER</label>
-                <input type="tel" id="phone_no" name="user_no">
+                        <div class="inputs">
+                            <label for="phone_no">PHONE NUMBER</label>
+                            <input type="tel" id="phone_no" name="user_no" required>
+                        </div>
 
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="user_password">
+                        <div class="inputs">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="user_password" required>
+                        </div>
 
-                <label for="re_password">CONFIRM PASSWORD</label>
-                <input type="password" id="re_password" name="user_re_password">
-
+                        <div class="inputs">
+                            <label for="re_password">CONFIRM PASSWORD</label>
+                            <input type="password" id="re_password" name="user_re_password" required>
+                        </div>
+                    </div>
+                </fieldset>
             </form>
         </div>
         <button type="submit">Create Account</button>
-        <div>Already have an account? <a>Log in</a></div>
+        <div class="padLeft">Already have an account? <a>Log in</a></div>
     </div>
 
 </body>
