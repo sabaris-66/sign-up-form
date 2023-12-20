@@ -89,10 +89,15 @@ input:valid {
     border: 2px solid green;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     background-color: chartreuse;
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 
 .left{
